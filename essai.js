@@ -37,7 +37,11 @@ function changementTimeZone(){
     if(heure == -1){
         heure = 11;
     }
-    let amPm = date.getHours() >= 12 ? "AM" : "PM";
+    else if(heure == -2){
+        heure = 11;
+    }
+    
+    let amPm = heure <= 12 ? "AM" : "PM";
 
     minute = minute <10 ? "0" + minute : minute;
     seconde = seconde <10 ? "0" + seconde : seconde;

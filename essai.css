@@ -1,0 +1,32 @@
+#clock {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150px;
+    width: 900px;
+    margin: 150px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 45px;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #ff0000;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all ease-in 0.1s;
+}
+
+button:active{
+    background-color: #8e0000;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all ease-in 0.1s;
+}

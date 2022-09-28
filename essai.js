@@ -33,7 +33,7 @@ function changementTimeZone(){
 
     let minute = date.getMinutes();
     let seconde = date.getSeconds();
-    let heure = date.getHours() > 12 ? date.getHours() - 14 : date.getHours() - 2;
+    let heure = date.getHours() > 12 ? date.getHours() - 13 : date.getHours() - 2;
     let amPm = heure <= 12 ? "AM" : "PM";
     if(heure == -1){
         heure = 11;

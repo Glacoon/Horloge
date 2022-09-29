@@ -59,3 +59,7 @@ function execution(){
         interval = setInterval(showTime, 1000);
     }, 5000);
 }
+
+function chrono(){
+    let timer = 0;
+}

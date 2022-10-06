@@ -12,9 +12,7 @@ function showTime(){
     document.getElementById("clock").innerHTML = `${heure}:${minute}:${seconde} ${amPm}`;
 }
 
-console.log("Hello World");
 let interval=setInterval(showTime, 1000);
-
 
 function changementPolice(){
     var e = document.getElementById('clock');
@@ -33,8 +31,8 @@ function changementTimeZone(){
 
     let minute = date.getMinutes();
     let seconde = date.getSeconds();
-    let heure = date.getHours() > 12 ? date.getHours() - 13 : date.getHours() - 2;
-    let amPm = heure <= 12 ? "AM" : "PM";
+    let heure = date.getHours() > 12 ? date.getHours() - 13 : date.getHours() - 1;
+    let amPm = heure >= 12 ? "AM" : "PM";
     if(heure == -1){
         heure = 11;
         amPm = "PM";

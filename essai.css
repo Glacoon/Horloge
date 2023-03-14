@@ -1,4 +1,7 @@
 #clock {
+    display: flex;
+    justify-content: center;
+
     font-family: 'Montserrat', sans-serif;
     font-size: 150px;
     width: 900px;
@@ -6,28 +9,63 @@
     text-align: center;
     border: 2px solid black;
     border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 button {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     width: 200px;
+    height: 65px;
     margin-top: 20px;
     margin-left: 45px;
     text-align: center;
-    border: 2px solid rgb(255, 0, 0);
     background-color: aliceblue;
+    border: none;
     border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
-    background-color: #ff0000;
-    border: 2px solid rgb(0, 0, 0);
+#Horloge button:hover{
+    background-color: #e44545;
     transition: all ease-in 0.2s;
 }
 
-button:active{
+#Horloge button:active{
     background-color: #8e0000;
-    border: 2px solid rgb(0, 0, 0);
     transition: all ease-in 0.2s;
+}
+
+#Chrono button:hover{
+    background-color: #1bb300;
+    transition: all ease-in 0.2s;
+}
+
+#boutons {
+    display: grid;
+    grid-template-columns: 33%*3;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-left: 15%;
+}
+
+#Chrono {
+    grid-row: 2;
+    display:none;
+}
+
+#Horloge{
+    grid-row: 1;
+}
+
+#start, #change{
+    grid-column: 1;
+}
+
+#stop, #Time{
+    grid-column: 2;
+}
+
+#reset, #Chronometre{
+    grid-column: 3;
 }

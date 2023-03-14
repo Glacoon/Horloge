@@ -2,16 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=
-      "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="essai.css">
 </head>
 <body>
     <div id="clock">8:10:45</div>
-    <button id="change" onclick="changementPolice()">Change Police</button>
-    <button id="Time" onclick="execution()">Nouvelle-Zelande</button>
-    <button id="Chrono" onclick="">Chronomètre</button>
+    <div id="boutons">
+        <div id="Chrono">
+            <button  id="start" onclick="startChrono()">Start</button>
+            <button  id="stop" onclick="stopChrono()">Stop</button>
+            <button  id="reset" onclick="resetChrono()">Reset</button>
+        </div>
+        <div id="Horloge">
+            <button id="change" onclick="changementPolice()">Change Police</button>
+            <button id="Time" onclick="execution()">New-Zealand</button>
+            <button id="Chronometre" onclick="modeChrono()">Chrono</button>
+        </div>
+    </div>
     <script src="essai.js"></script>
 </body>
 </html>
